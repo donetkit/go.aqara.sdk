@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/donetkit/aqara.sdk/app/frame/network"
-	"github.com/donetkit/aqara.sdk/app/frame/util"
+	"github.com/donetkit/go.aqara.sdk/app/frame/network"
+	"github.com/donetkit/go.aqara.sdk/app/frame/util"
 )
 
 type buildOauthHandler func(bodyObj interface{}) (body map[string]interface{}, err error)

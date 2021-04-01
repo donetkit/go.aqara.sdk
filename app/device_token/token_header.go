@@ -2,9 +2,10 @@ package device_token
 
 import (
 	"fmt"
-	"github.com/donetkit/aqara.sdk/app/entities"
-	"github.com/donetkit/aqara.sdk/app/frame/auth_client"
-	"github.com/donetkit/aqara.sdk/app/frame/util"
+
+	"github.com/donetkit/go.aqara.sdk/app/entities"
+	"github.com/donetkit/go.aqara.sdk/app/frame/auth_client"
+	"github.com/donetkit/go.aqara.sdk/app/frame/util"
 )
 
 func requestHeader() *entities.HeaderV1Request {
@@ -15,5 +16,3 @@ func requestHeader() *entities.HeaderV1Request {
 	}
 	return head
 }
-
-

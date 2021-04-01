@@ -1,8 +1,8 @@
 package gb
 
 import (
-	"github.com/donetkit/aqara.sdk/app/config"
-	"github.com/donetkit/aqara.sdk/app/frame/cache"
+	"github.com/donetkit/go.aqara.sdk/app/config"
+	"github.com/donetkit/go.aqara.sdk/app/frame/cache"
 )
 
 var Cache *cache.Cacher

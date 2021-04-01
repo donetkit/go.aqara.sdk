@@ -6,18 +6,18 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/donetkit/aqara.sdk/app/device_utils"
+	"github.com/donetkit/go.aqara.sdk/app/device_utils"
 
-	"github.com/donetkit/aqara.sdk/app/frame/util"
+	"github.com/donetkit/go.aqara.sdk/app/frame/util"
 
-	"github.com/donetkit/aqara.sdk/app/device_utils/common"
+	"github.com/donetkit/go.aqara.sdk/app/device_utils/common"
 
-	"github.com/donetkit/aqara.sdk/app/config"
-	"github.com/donetkit/aqara.sdk/app/device_sign"
-	"github.com/donetkit/aqara.sdk/app/device_token"
-	"github.com/donetkit/aqara.sdk/app/frame/auth_client"
-	"github.com/donetkit/aqara.sdk/app/frame/dev_client"
-	"github.com/donetkit/aqara.sdk/app/frame/gb"
+	"github.com/donetkit/go.aqara.sdk/app/config"
+	"github.com/donetkit/go.aqara.sdk/app/device_sign"
+	"github.com/donetkit/go.aqara.sdk/app/device_token"
+	"github.com/donetkit/go.aqara.sdk/app/frame/auth_client"
+	"github.com/donetkit/go.aqara.sdk/app/frame/dev_client"
+	"github.com/donetkit/go.aqara.sdk/app/frame/gb"
 )
 
 var did = "lumi."

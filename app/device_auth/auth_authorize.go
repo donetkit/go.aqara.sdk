@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/donetkit/aqara.sdk/app/frame/network"
+	"github.com/donetkit/go.aqara.sdk/app/frame/network"
 
-	"github.com/donetkit/aqara.sdk/app/config"
-	"github.com/donetkit/aqara.sdk/app/entities"
-	"github.com/donetkit/aqara.sdk/app/frame/auth_client"
-	"github.com/donetkit/aqara.sdk/app/frame/util"
+	"github.com/donetkit/go.aqara.sdk/app/config"
+	"github.com/donetkit/go.aqara.sdk/app/entities"
+	"github.com/donetkit/go.aqara.sdk/app/frame/auth_client"
+	"github.com/donetkit/go.aqara.sdk/app/frame/util"
 	"github.com/gin-gonic/gin"
 )
 

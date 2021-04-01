@@ -3,10 +3,10 @@ package device_sign
 import (
 	"fmt"
 
-	"github.com/donetkit/aqara.sdk/app/entities"
-	"github.com/donetkit/aqara.sdk/app/frame/auth_client"
-	"github.com/donetkit/aqara.sdk/app/frame/util"
-	"github.com/donetkit/aqara.sdk/app/request/auth_request"
+	"github.com/donetkit/go.aqara.sdk/app/entities"
+	"github.com/donetkit/go.aqara.sdk/app/frame/auth_client"
+	"github.com/donetkit/go.aqara.sdk/app/frame/util"
+	"github.com/donetkit/go.aqara.sdk/app/request/auth_request"
 )
 
 type apiSignDevice struct{}

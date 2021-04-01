@@ -3,9 +3,9 @@ package device_sign
 import (
 	"fmt"
 
-	"github.com/donetkit/aqara.sdk/app/entities"
-	"github.com/donetkit/aqara.sdk/app/frame/auth_client"
-	"github.com/donetkit/aqara.sdk/app/frame/util"
+	"github.com/donetkit/go.aqara.sdk/app/entities"
+	"github.com/donetkit/go.aqara.sdk/app/frame/auth_client"
+	"github.com/donetkit/go.aqara.sdk/app/frame/util"
 )
 
 func requestHeader() *entities.HeaderRequest {

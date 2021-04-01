@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/donetkit/aqara.sdk/app/config"
-	"github.com/donetkit/aqara.sdk/app/entities"
-	"github.com/donetkit/aqara.sdk/app/frame/gb"
-	"github.com/donetkit/aqara.sdk/app/frame/util"
-	"github.com/donetkit/aqara.sdk/app/request/auth_request"
+	"github.com/donetkit/go.aqara.sdk/app/config"
+	"github.com/donetkit/go.aqara.sdk/app/entities"
+	"github.com/donetkit/go.aqara.sdk/app/frame/gb"
+	"github.com/donetkit/go.aqara.sdk/app/frame/util"
+	"github.com/donetkit/go.aqara.sdk/app/request/auth_request"
 )
 
 type AuthAccessTokenClient struct {

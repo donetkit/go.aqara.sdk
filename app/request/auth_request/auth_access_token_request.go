@@ -3,9 +3,9 @@ package auth_request
 import (
 	"time"
 
-	"github.com/donetkit/aqara.sdk/app/entities"
-	"github.com/donetkit/aqara.sdk/app/frame/network"
-	"github.com/donetkit/aqara.sdk/app/frame/util"
+	"github.com/donetkit/go.aqara.sdk/app/entities"
+	"github.com/donetkit/go.aqara.sdk/app/frame/network"
+	"github.com/donetkit/go.aqara.sdk/app/frame/util"
 )
 
 // 获取访问令牌

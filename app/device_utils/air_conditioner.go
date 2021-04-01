@@ -3,7 +3,7 @@ package device_utils
 import (
 	"fmt"
 
-	"github.com/donetkit/aqara.sdk/app/device_utils/common"
+	"github.com/donetkit/go.aqara.sdk/app/device_utils/common"
 )
 
 // 开关

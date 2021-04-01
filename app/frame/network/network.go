@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/donetkit/aqara.sdk/app/frame/util"
+	"github.com/donetkit/go.aqara.sdk/app/frame/util"
 )
 
 var client *http.Client

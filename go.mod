@@ -1,4 +1,4 @@
-module github.com/donetkit/aqara.sdk
+module github.com/donetkit/go.aqara.sdk
 
 go 1.16
 

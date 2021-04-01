@@ -3,9 +3,10 @@ package dev_request
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/donetkit/aqara.sdk/app/frame/network"
-	"github.com/donetkit/aqara.sdk/app/frame/util"
 	"strings"
+
+	"github.com/donetkit/go.aqara.sdk/app/frame/network"
+	"github.com/donetkit/go.aqara.sdk/app/frame/util"
 )
 
 // 构建Body
@@ -37,16 +38,16 @@ func buildHeaders(headerObj interface{}, appkey string) (heads map[string]interf
 
 // 本地通过支付参数计算签名值
 func localSign(body map[string]interface{}, appkey string) string {
-	signStr := util.SortSignParams(body,appkey)
+	signStr := util.SortSignParams(body, appkey)
 	signStr = strings.ToLower(signStr)
-	signStr= fmt.Sprintf("%s%s",signStr,appkey)
+	signStr = fmt.Sprintf("%s%s", signStr, appkey)
 	return util.SignWithMd5(signStr)
 }
 
 // 向aiot发送请求
 func DoAiotHttp(url string, bodyObj interface{}, appkey string) (bytes []byte, err error) {
 	// 转换参数
-	body, err := buildBody(bodyObj,appkey)
+	body, err := buildBody(bodyObj, appkey)
 	if err != nil {
 		return
 	}
@@ -55,7 +56,6 @@ func DoAiotHttp(url string, bodyObj interface{}, appkey string) (bytes []byte, e
 	return
 }
 
-
 // 向aiot发送请求
 func DoAiotHttpGet(url string) (bytes []byte, err error) {
 	// 发起请求
@@ -63,14 +63,13 @@ func DoAiotHttpGet(url string) (bytes []byte, err error) {
 	return
 }
 
-
 // 向aiot发送请求
 func DoAiotHttpGetHeader(url string, header interface{}, appkey string) (bytes []byte, err error) {
-	headers,err := buildHeaders(header,appkey)
-	if err !=nil {
+	headers, err := buildHeaders(header, appkey)
+	if err != nil {
 		fmt.Println(err.Error())
 	}
 	// 发起请求
-	bytes, err = network.HttpGetHeaderMap(url, headers,nil)
+	bytes, err = network.HttpGetHeaderMap(url, headers, nil)
 	return
 }
