@@ -1,0 +1,7 @@
+config:
+  aqara:
+    oauth_client_id:
+    oauth_client_secret:
+    dev_client_id:
+    dev_client_secret:
+    authorize_uri: http://127.0.0.1:7777/aqara/oauth/code

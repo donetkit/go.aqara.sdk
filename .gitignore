@@ -1,10 +1,2 @@
 .idea
 .vscode
-*.exe
-aqara.sdk
-!temp
-vendor
-main
-config/
-app/
-app/app_test.go
