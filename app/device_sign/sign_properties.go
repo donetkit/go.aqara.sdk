@@ -334,11 +334,11 @@ func (a *apiSignProperties) PropertiesWriteSystemVolume(did string, value int) b
 // 提交控制指令 /open/properties/write  继电器开关状态。0:关闭，1:打开,2:unknown(读)
 func (a *apiSignProperties) PropertiesWriteRelayStatus(did string, value int) bool {
 	head := requestHeader()
-	data := entities.PropertiesWriteDataRequest{
+	data := entities.PropertiesWriteDataIntRequest{
 		Did:  did,
-		Data: make(map[string]string, 0),
+		Data: make(map[string]int, 0),
 	}
-	data.Data["relay_status"] = string(value)
+	data.Data["relay_status"] = value
 	url := "https://aiot-open-3rd.aqara.cn/v2.0/open/properties/write"
 	bytes, err := auth_request.DoAiotHttpPostSignHeader(url, head, data, auth_client.AuthAccessTokenClient.Config.DevClientSecret)
 	if err != nil {

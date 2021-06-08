@@ -240,3 +240,30 @@ func AirConditionerValueToMap(data int) map[string]interface{} {
 	//fmt.Println(binData[25:26]) // 默认为0	是否为压缩码
 	return result
 }
+
+// 转换空调参数
+func AirConditionerValueBinToMap(binData string) map[string]interface{} {
+	result := make(map[string]interface{}, 0)
+	result["switch"] = airConditionerSwitch(binData[0:4])
+	result["model"] = airConditionerModel(binData[4:8])
+	result["speed"] = airConditionerWindSpeed(binData[8:12])
+	result["wind"] = airConditionerWindDirection(binData[12:14])
+	result["sweeping"] = airConditionerSweeping(binData[14:16])
+	result["temperature"] = airConditionerTemperature(binData[16:24])
+	result["led"] = airConditionerLED(binData[26:27])
+	result["cmd"] = airConditionerCMD(binData[27:28])
+
+	result["switch_val"] = common.BinHex(binData[0:4])
+	result["model_val"] = common.BinHex(binData[4:8])
+	result["speed_val"] = common.BinHex(binData[8:12])
+	result["wind_val"] = common.BinHex(binData[12:14])
+	result["sweeping_val"] = common.BinHex(binData[14:16])
+	result["temperature_val"] = common.BinDec(binData[16:24])
+	result["led_val"] = common.BinHex(binData[26:27])
+	result["cmd_val"] = common.BinHex(binData[27:28])
+
+	//result["类型"] = airConditionerType(binData[28:32])
+	//fmt.Println(binData[24:25]) // 默认为0	扩展位
+	//fmt.Println(binData[25:26]) // 默认为0	是否为压缩码
+	return result
+}
