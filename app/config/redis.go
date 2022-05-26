@@ -48,3 +48,13 @@ func initRedis(cfg *viper.Viper) *Redis {
 	}
 	return config
 }
+
+// SetupRedisConfigNew 载入配置文件
+func SetupRedisConfigNew(addr string, port int, password string, db int) {
+	RedisConfig = &Redis{
+		Addr:     addr,
+		Port:     port,
+		Password: password,
+		DB:       db,
+	}
+}

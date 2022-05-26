@@ -49,3 +49,15 @@ func SetupAqaraConfig(path string) {
 	}
 	AqaraConfig = initAqara(aqaraApp)
 }
+
+// SetupAqaraConfigNew 载入配置文件
+func SetupAqaraConfigNew(oauthClientId, oauthClientSecret, devClientId, devClientSecret, authorizeUri string) {
+	AqaraConfig = &Aqara{
+		OauthClientId:     oauthClientId,
+		OauthClientSecret: oauthClientSecret,
+		DevClientId:       devClientId,
+		DevClientSecret:   devClientSecret,
+		AuthorizeUri:      authorizeUri,
+	}
+
+}
